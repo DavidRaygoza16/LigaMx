@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Liga MX (Actualizar)</title>
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="diseño.css">
+</head>
+<body>
+<DIV class="form">
+<form action="modificar.php"  method="POST" >
+<style >
+	body{
+	background: url(FAdmin.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+	}	
+</style>
+<h1> ACTUALIZAR DATOS DE JUGADORES </h1>
+
+Nombre          
+<input type="text"  name="nombre" placeholder="Nombre Completo" required="">  <br />
+
+<label for="nacionalidad">Nacionalidad</label>
+<select name="nacionalidad">
+	<option value=" Argentina "> Argentina </option>
+	<option value=" Brasil "> Brasil </option>
+	<option value=" Chile "> Chile </option>
+	<option value=" Colombia "> Colombia </option>
+	<option value=" Costa Rica "> Costa Rica </option>
+	<option value=" Costa de Marfil "> Costa de Marfil </option>
+	<option value=" Ecuador "> Ecuador </option>
+	<option value=" España "> España </option>
+	<option value=" Francia "> Francia </option>
+	<option value=" Holanda "> Holanda </option>
+	<option selected value=" Mexico "> Mexico </option>
+	<option value=" Panama "> Panama </option>
+	<option value=" Paraguay "> Paraguay </option>
+	<option value=" Peru "> Peru </option>
+	<option value=" Uruguay "> Uruguay </option>
+	<option value=" Estados Unidos "> USA </option>
+	<option value=" Salvador "> Salvador </option>
+	
+</select><br>
+
+Edad
+<input type="number"  name="edad" placeholder="Edad" required=""> <br />
+Numero
+<input type="number"  name="numero"  placeholder="Numero" required=""> <br />
+
+<label for="id_club">Club</label>
+<select name="id_club">
+	<option value=" 1 "> America </option>
+	<option value=" 2 "> Atlas </option>
+	<option value=" 3 "> Atletico San Luis </option>
+	<option value=" 4 "> Cruz Azul </option>
+	<option value=" 5 "> Guadalajara </option>
+	<option value=" 6 "> Juarez </option>
+	<option value=" 7 "> Leon </option>
+	<option value=" 8 "> Mazatlan </option>
+	<option value=" 9 "> Monterrey </option>
+	<option  value=" 10 "> Necaxa </option>
+	<option  value=" 11 "> Pachuca </option>
+	<option  value=" 12 "> Puebla </option>
+	<option  value=" 13 "> Queretaro </option>
+	<option  value=" 14 "> Santos </option>
+	<option  value=" 15 "> Tigres UANL </option>
+	<option  value=" 16 "> Tijuana </option>
+	<option  value=" 17 "> Toluca </option>
+	<option value=" 18 "> UNAM </option>
+</select><br>
+
+<label for="id_posicion">Posicion</label>
+<select name="id_posicion">
+	<option value=" 1 "> Portero</option>
+	<option value=" 2 "> Defensa Central</option>
+	<option value=" 3 "> Lateral Izquierdo</option>
+	<option value=" 4 "> Lateral Derecho</option>
+	<option value=" 5 "> Pivote</option>
+	<option value=" 6 "> Mediocentro</option>
+	<option value=" 7 "> Interior Izquierdo</option>
+	<option value=" 8 "> Interior Derecho</option>
+	<option value=" 9 "> Mediocentro Ofensivo</option>
+	<option value=" 10 "> Mediocentro Defensivo</option>
+	<option value=" 11 "> Extremo Izquierdo</option>
+	<option value=" 12 "> Extremo Derecho</option>
+	<option value=" 13 "> Mediapunta</option>
+	<option value=" 14 "> Delantero</option>
+
+</select><br>
+
+
+Fin contrato
+<input type="date" name="fin_contrato"  placeholder="Fin contrato" required=""> <br />
+<br/>
+<input type="submit" class="btn5" name="actualizar" value="Actualizar">
+
+<input type="RESET" class="btn6" name="limpiar" value="Limpiar">	<br/>
+
+<a href="PAdmin.html"> <button type="submit" name="back1" value="Atras">Regresar</a> </center>
+<br/>
+</form>
+</DIV>
+</body>
+</html>

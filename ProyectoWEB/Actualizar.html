@@ -1,0 +1,41 @@
+<?php
+include ("conexion.php");
+
+    $result =mysqli_query($conn, "SELECT * FROM registro");
+
+    echo "
+    <center><h2>Eliminación de registros</h2></center><br>
+    <center><table width\"100%\" border=\"1\"></center>
+    <tr>
+           <td><b><center>ID</center></b></td>
+            <td><b><center>NOMBRE</center></b></td>
+            <td><b><center>APELLIDO</center></b></td>
+            <td><b><center>NO_DE_CONTROL</center></b></td>
+            <td><b><center>EMAIL</center></b></td>
+            <td><b><center>CONTRASEÑA</center></b></td>
+            
+            
+        </tr>
+";
+    while($consulta = mysqli_fetch_array($result)){
+echo "
+        <tr>
+            <td>".$consulta['Id']."</td>
+            <td>".$consulta['Nombre']."</td>
+            <td>".$consulta['Apellido']."</td>
+            <td>".$consulta['NoControl']."</td>
+            <td>".$consulta['Email']."</td>
+            <td>".$consulta['Contrasena']."</td>
+            
+            
+            <td> <br><form action='eliminar_reg.php' method='post'>\n
+                <input type='hiden' name='id' value='".$consulta['Id']."'>
+                <input type='submit' value='Eliminar'>
+                </form></td>
+                        
+        </tr>
+
+        ";
+}
+          
+?>

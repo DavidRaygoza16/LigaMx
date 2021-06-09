@@ -1,0 +1,67 @@
+.form{
+position: relative;
+width: 300px;
+height: 500px;
+padding-left:50px;
+padding-top: 0px;
+background-color:black;
+margin: auto;
+
+}
+.btn2{
+position: relative;
+background-color: #FF0000	;
+	top: -22px;
+	left: 180px;
+}
+.atras{
+	position: relative;
+
+	top:-1000px;
+	left: 22px;
+}
+.btn4{
+position: relative;
+background-color: #008000		;
+	top: 0px;
+	left: 0px;
+}
+
+.btn41{
+position: relative;
+background-color: #008000		;
+	top: 0px;
+	left: 105px;
+}
+
+.btn{
+
+background-color: #008000	;
+}
+.btn3{
+
+background-color: #FF0000	;
+
+}
+.btn1{
+position: relative;
+
+	top: 0px;
+	left: 22px;
+}
+.btn5{
+position: relative;
+background-color: #008000	;
+
+	}
+
+.btn6{
+position: relative;
+background-color: #FF0000		;
+	top: 0px;
+	left: 115px;
+}	
+
+
+
+
